@@ -1,0 +1,87 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+// Framework
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+
+// Estilos
+body {
+
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.body-pikachu img {
+
+    height: 500px;
+    width: auto;
+    top: auto;
+    left: auto;
+    position: absolute;
+
+}
+
+.ojoizquerdo-pikachu img {
+
+    height: 40px;
+    width: auto;
+    top: 33%;
+    left: 105px;
+    position: absolute;
+
+}
+
+.ojoderecho-pikachu img {
+
+    height: 40px;
+    width: auto;
+    top: 33%;
+    left: 190px;
+    position: absolute;
+
+}
+
+.boca-pikachu img {
+
+    height: 50px;
+    width: auto;
+    top: 38%;
+    left: 127px;
+    position: absolute;
+
+}
+
+.brazoizquerdo-pikachu img {
+
+    height: 100px;
+    width: auto;
+    top: 50%;
+    left: 90px;
+    position: absolute;
+
+}
+
+.brazoderecho-pikachu img {
+
+    height: 100px;
+    width: auto;
+    top: 50%;
+    left: 182px;
+    position: absolute;
+    
+}
+
+.cola-pikachu img {
+
+    height: 250px;
+    width: auto;
+    top: 22%;
+    left: 233px;
+    position: absolute;
+
+}
+

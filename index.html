@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pika Pika</title>
+    <link rel="stylesheet" href="assets/scss/proyecto.css">
+</head>
+<body>
+
+    <button type="button" id="animar" class="btn btn-warning">Mueveme</button>
+
+    <div class="pikachu">
+
+        <div class="body-pikachu">
+            <img id="cuerpo" src="assets\img\pikachu_cuerpo.png" alt="pikachu body">
+        </div>
+    
+        <div class="ojoizquerdo-pikachu">
+            <img id="ojo-izquerdo" src="assets\img\pikachu_ojo 1.png" alt="pikachu ojo izquerdo">
+        </div>
+    
+        <div class="ojoderecho-pikachu">
+            <img id="ojo-derecho" src="assets\img\pikachu_ojo 2.png" alt="pikachu ojo derecho">
+        </div>
+    
+        <div class="boca-pikachu">
+            <img id="boca" src="assets\img\pikachu_boca.png" alt="pikachu boca">
+        </div>
+    
+        <div class="brazoizquerdo-pikachu">
+            <img id="brazo-izquerdo" src="assets\img\pikachu_brazo 1.png" alt="pikachu brazo izquerdo">
+        </div>
+    
+        <div class="brazoderecho-pikachu">
+            <img id="brazo-derecho" src="assets\img\pikachu_brazo 2.png" alt="pikachu brazo derecho">
+        </div>
+    
+        <div class="cola-pikachu">
+            <img id="cola" src="assets\img\pikachu_cola.png" alt="pikachu tale">
+        </div>
+
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function() {
+        let brazo1 = $('.brazoderecho-pikachu img');
+        let brazo2 = $('.brazoizquerdo-pikachu img');
+        let boca = $('.boca-pikachu img');
+        let ojo1 = $('.ojoderecho-pikachu img');
+        let ojo2 = $('.ojoizquerdo-pikachu img');
+        let boton = $('#animar');
+
+        boton.click(function() {
+            
+            brazo1.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(360deg)'
+            });
+  
+            brazo2.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(360deg)'
+            });
+
+            ojo1.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(360deg)'
+            });
+
+            ojo2.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(360deg)'
+            });
+
+            boca.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(360deg)'
+            });
+            // funcion pa resetear la animacion
+            setTimeout(function() {
+                brazo1.css('transform', 'rotate(0deg)');
+                brazo2.css('transform', 'rotate(0deg)');
+                ojo1.css('transform', 'rotate(0deg)');
+                ojo2.css('transform', 'rotate(0deg)');
+                boca.css('transform', 'rotate(0deg)');
+
+            }, 1000);
+        });
+    });
+
+
+
+    </script>
+
+    
+</body>
+</html>
